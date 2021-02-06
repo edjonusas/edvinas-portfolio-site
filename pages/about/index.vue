@@ -1,7 +1,13 @@
 <template>
-  <div>about</div>
+  <About />
 </template>
 
 <script>
-export default {}
+import About from '~/components/About/About.vue'
+export default {
+  components: { About },
+  async fetch() {
+    await this.$store.dispatch('getAboutPage')
+  },
+}
 </script>

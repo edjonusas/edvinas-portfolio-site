@@ -39,13 +39,16 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
   // add sass variables to project
   styleResources: {
-    scss: ['~/assets/scss/variables.scss'],
+    scss: ['~/assets/scss/variables.scss', '~/assets/scss/global-classes.scss'],
+  },
+  axios: {
+    // proxy: true
   },
 }

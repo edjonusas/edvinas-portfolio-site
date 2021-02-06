@@ -1,17 +1,23 @@
 <template>
-  <div class="container">
-    <h1>Edvinas Jonušas</h1>
-    <h2>Web developer</h2>
+  <div class="block">
+    <h1>{{ homePage.mainHeader }}</h1>
+    <h2>{{ homePage.subHeader }}</h2>
     <div class="button"><NuxtLink to="/portfolio">Portfolio</NuxtLink></div>
     <div>
       <h3>Contact Me</h3>
-      <p>ed.jonusas@gmail.com</p>
+      <p>{{ homePage.userEmail }}</p>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    homePage() {
+      return this.$store.getters.getHomePage
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -33,7 +39,7 @@ p {
   font-weight: 700;
   margin: 0;
 }
-.container {
+.block {
   text-align: center;
   display: flex;
   flex-direction: column;
