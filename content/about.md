@@ -1,7 +1,11 @@
 ---
 title: My name is Edvinas
-aboutText: This is text about me. his is test **bold** font, this is
-  [link](www.google.com)
+aboutText: This is text about me.This is text about me.This is text about
+  me.This is text about me.This is text about me.This is text about me.This is
+  text about me.This is text about me.This is text about me.This is text about
+  me.This is text about me.This is text about me.This is text about me.This is
+  text about me.This is text about me.This is text about me.This is text about
+  me.This is text about me.This is text about me.
 image: /img/my-portrait.jpg
 skills:
   - skill: JavaStript
