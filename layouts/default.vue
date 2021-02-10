@@ -37,4 +37,15 @@ a {
   color: $color-background;
   background: $color-black;
 }
+
+//page animation
+.page-enter-active,
+.page-enter-active {
+  transition: opacity 0.6s ease;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
 </style>
