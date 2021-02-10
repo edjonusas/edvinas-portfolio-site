@@ -3,16 +3,18 @@
     <h2>{{ aboutPage.title }}</h2>
     <div>
       <div>
-        <nuxt-content :document="aboutPage.title" />
+        <p>{{ aboutPage.aboutText }}</p>
+        <nuxt-content :document="aboutPage" />
         <div>
           <h3>Programing skills</h3>
           <ul>
-            <li v-for="(skill, index) in aboutPage.title" :key="index">skills</li>
+            <li v-for="(skill, index) in aboutPage.skills" :key="index">{{ skill.skill }}</li>
           </ul>
         </div>
       </div>
-      <div>img</div>
+      <div><img :src="aboutPage.image" alt="about image" /></div>
     </div>
+    {{ aboutPage }}
   </div>
 </template>
 

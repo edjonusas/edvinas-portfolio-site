@@ -35,11 +35,10 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxt/content',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios', '@nuxt/content'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},

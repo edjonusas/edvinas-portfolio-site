@@ -1,13 +1,14 @@
 <template>
-  <About />
+  <About :about-page="aboutPage" />
 </template>
 
 <script>
 import About from '~/components/About/About.vue'
 export default {
   components: { About },
-  async fetch() {
-    await this.$store.dispatch('getAboutPage')
+  async asyncData({ $content }) {
+    const aboutPage = await $content('about').fetch()
+    return { aboutPage }
   },
 }
 </script>
