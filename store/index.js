@@ -18,6 +18,7 @@ export const mutations = {
   },
   setAboutPage(state, data) {
     state.aboutPage = data
+    console.log(state.aboutPage)
   },
 }
 

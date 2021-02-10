@@ -1,23 +1,17 @@
 <template>
   <div class="block">
-    <h1>{{ homePage.mainHeader }}</h1>
-    <h2>{{ homePage.subHeader }}</h2>
+    <h1>homePage.mainHeader</h1>
+    <h2>homePage.subHeader</h2>
     <div class="button"><NuxtLink to="/portfolio">Portfolio</NuxtLink></div>
     <div>
       <h3>Contact Me</h3>
-      <p>{{ homePage.userEmail }}</p>
+      <p>homePage.userEmail</p>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  computed: {
-    homePage() {
-      return this.$store.getters.getHomePage
-    },
-  },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
