@@ -11,7 +11,15 @@
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content }) {
+    const posts = await $content('blog').fetch()
+
+    return {
+      posts,
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

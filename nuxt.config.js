@@ -39,7 +39,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios', '@nuxt/content'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
@@ -50,5 +50,8 @@ export default {
   },
   axios: {
     // proxy: true
+  },
+  content: {
+    // Options
   },
 }
