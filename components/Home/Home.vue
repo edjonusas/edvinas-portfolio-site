@@ -1,17 +1,24 @@
 <template>
   <div class="block">
-    <h1>page</h1>
-    <h2>homePage.subHeader</h2>
+    <h1>{{ homePage.title }}</h1>
+    <h2>{{ homePage.subTitle }}</h2>
     <div class="button"><NuxtLink to="/portfolio">Portfolio</NuxtLink></div>
     <div>
       <h3>Contact Me</h3>
-      <p>homePage.userEmail</p>
+      <p>{{ homePage.email }}</p>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    homePage: {
+      type: Object,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
