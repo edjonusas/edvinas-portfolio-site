@@ -6,6 +6,30 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'Home Page'
+        name: 'home'
+        file: 'site/content/.yml'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Sub title, name: subTitle, widget: string }
+          - { label: Email, name: email, widget: string }
+
+      - label: 'About Page'
+        name: 'about'
+        file: 'site/content/about.yml'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: About text, name: aboutText, widget: markdown }
+          - { label: About image, name: image, widget: image }
+          - label: IT skills
+            name: skills
+            widget: list
+            fields:
+              - { label: skill, name: skill, widget: string }
+
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
@@ -19,3 +43,17 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  # - name: 'portfolio'
+  #   label: 'portfolio'
+  #   folder: 'content/portfolio'
+  #   format: 'frontmatter'
+  #   create: true
+  #   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+  #     - { label: 'Description', name: 'description', widget: 'string' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
