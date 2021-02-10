@@ -1,0 +1,10 @@
+title: My name is Edvinas
+aboutText: This is a text about me. And more text about me This is a text about
+  me. And more text about me This is a text about me. And more text about me
+image: /img/my-portrait.jpg
+skills:
+  - skill: JavaSript
+  - skill: Vue.js
+  - skill: Nuxt.js
+  - skill: PHP
+  - skill: GIT
