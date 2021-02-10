@@ -1,6 +1,6 @@
 <template>
   <div class="block">
-    <h1>homePage.mainHeader</h1>
+    <h1>page</h1>
     <h2>homePage.subHeader</h2>
     <div class="button"><NuxtLink to="/portfolio">Portfolio</NuxtLink></div>
     <div>
@@ -11,15 +11,7 @@
 </template>
 
 <script>
-export default {
-  async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
-
-    return {
-      posts,
-    }
-  },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>

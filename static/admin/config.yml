@@ -8,11 +8,12 @@ public_folder: /img
 collections:
   - label: 'Pages'
     name: 'pages'
+
     format: 'frontmatter'
     files:
       - label: 'Home Page'
         name: 'home'
-        file: 'content/home.yml'
+        file: 'content/home.md'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Sub title, name: subTitle, widget: string }
@@ -20,7 +21,7 @@ collections:
 
       - label: 'About Page'
         name: 'about'
-        file: 'content/about.yml'
+        file: 'content/about.md'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: About text, name: aboutText, widget: markdown }
