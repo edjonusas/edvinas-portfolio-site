@@ -30,9 +30,8 @@ collections:
             widget: list
             fields:
               - { label: skill, name: skill, widget: string }
-
-  - name: 'portfolio'
-    label: 'portfolio'
+  - label: 'portfolio'
+    name: 'portfolio'
     folder: 'content/portfolio'
     format: 'frontmatter'
     create: true
