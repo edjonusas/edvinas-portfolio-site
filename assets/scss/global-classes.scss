@@ -1,11 +1,18 @@
 //global classes
 .container {
-  margin: 2rem;
+  margin: 1rem;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    margin: 80px auto;
+    width: 650px;
+  }
 }
 
 @media (min-width: $breakpoint-laptop) {
   .container {
-    margin: 0 auto;
+    margin: 80px auto;
     width: 800px;
   }
 }
