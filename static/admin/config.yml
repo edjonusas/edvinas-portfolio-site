@@ -38,7 +38,7 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+    preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -47,5 +47,8 @@ collections:
       - { label: Portfolio image, name: portfolioImage, widget: image }
       - { label: 'GitHub link', name: 'gitHubLink', widget: 'string', required: false }
       - { label: 'Site link', name: 'siteLink', widget: 'string', required: false }
-      fields:
-              - { label: Tech used, name: techUsed, widget: string }
+      - label: Tech list
+        name: techList
+        widget: list
+        fields:
+          - { label: Tech used, name: techUsed, widget: string }
