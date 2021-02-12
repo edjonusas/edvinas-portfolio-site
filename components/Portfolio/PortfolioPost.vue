@@ -1,6 +1,12 @@
 <template>
-  <div class="card" :style="{ backgroundImage: 'url(' + portfolio.portfolioImage + ')' }">
-    <div class="card-name">{{ portfolio.title }}</div>
+  <div class="container">
+    <div
+      class="portfolio-post-img"
+      :style="{ backgroundImage: 'url(' + portfolio.portfolioImage + ')' }"
+    >
+      <h2>{{ portfolio.title }}</h2>
+    </div>
+    <nuxt-content :document="portfolio" />
   </div>
 </template>
 
@@ -16,29 +22,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
+.portfolio-post-img {
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .card-name {
-    transition: 0.5s;
-    padding: 10px;
+  h2 {
+    padding: 20px;
     background-color: $color-accent;
     color: $color-background;
-    font-weight: 700;
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: $breakpoint-tablet) {
-  .card {
-    width: inherit;
   }
 }
 </style>

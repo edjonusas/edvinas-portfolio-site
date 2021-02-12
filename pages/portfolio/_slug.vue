@@ -1,0 +1,22 @@
+<template>
+  <div>
+    <PortfolioPost :portfolio="post" />
+  </div>
+</template>
+
+<script>
+export default {
+  async asyncData({ $content, params, error }) {
+    let post
+    try {
+      post = await $content('portfolio', params.slug).fetch()
+    } catch (e) {
+      error({ message: 'Blog Post not found' })
+    }
+
+    return {
+      post,
+    }
+  },
+}
+</script>

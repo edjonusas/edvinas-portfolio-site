@@ -56,16 +56,16 @@ p {
     text-transform: uppercase;
     transition: 0.6s;
     display: inline-block;
-    border: 3px solid $color-black;
+    border: 3px solid $color-accent;
     padding: 10px 22px;
     font-weight: 700;
     font-size: $font-medium;
-    color: $color-black;
+    color: $color-accent;
     text-decoration: none;
 
     &:hover {
       color: $color-background;
-      background-color: $color-black;
+      background-color: $color-accent;
     }
   }
 }
