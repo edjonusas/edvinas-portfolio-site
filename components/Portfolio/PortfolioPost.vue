@@ -85,6 +85,7 @@ export default {
   > div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     .tech {
       font-weight: 700;

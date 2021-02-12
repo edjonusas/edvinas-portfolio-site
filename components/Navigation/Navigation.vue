@@ -47,14 +47,15 @@ export default {
 
 <style lang="scss" scoped>
 nav {
+  z-index: 2;
   height: 10vh;
   position: relative;
 }
 
 img {
+  position: fixed;
   -webkit-tap-highlight-color: transparent;
-  position: absolute;
-  z-index: 2;
+  z-index: 3;
   float: right;
   padding: 10px;
   top: 20px;
@@ -68,12 +69,13 @@ img {
 }
 
 .nav-block {
+  position: fixed;
+  z-index: 2;
   transition: 0.5s;
   z-index: 1;
   top: 0;
   right: 0;
   padding: 200px 40px 0;
-  position: absolute;
   background-color: $color-background;
   text-transform: uppercase;
   font-size: $font-medium;

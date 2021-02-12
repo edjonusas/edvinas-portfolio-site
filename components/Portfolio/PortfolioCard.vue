@@ -38,7 +38,7 @@ export default {
   }
 
   .card-name {
-    z-index: 2;
+    z-index: 1;
     transition: 0.5s;
     padding: 15px 20px;
     border: solid 3px $color-accent;
