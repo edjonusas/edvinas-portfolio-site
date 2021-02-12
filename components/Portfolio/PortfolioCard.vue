@@ -17,6 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .card {
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,11 +27,23 @@ export default {
   justify-content: center;
   align-items: center;
 
-  .card-name {
+  &::after {
+    content: '';
+    background-color: #324b507e;
     transition: 0.5s;
-    padding: 10px;
-    background-color: $color-accent;
-    color: $color-background;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-name {
+    z-index: 2;
+    transition: 0.5s;
+    padding: 15px 20px;
+    border: solid 3px $color-accent;
+    background-color: none;
+    color: $color-accent;
     font-weight: 700;
     font-size: 1.2rem;
   }

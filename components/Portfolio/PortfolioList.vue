@@ -35,7 +35,11 @@ a {
 
 a:hover {
   /deep/ .card-name {
-    transform: scale(1.2);
+    background-color: $color-accent;
+    color: $color-background;
+  }
+  /deep/ .card::after {
+    background-color: #324b50b4;
   }
 }
 
@@ -43,8 +47,7 @@ a:hover {
   .block {
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 0.5rem));
-    grid-template-rows: repeat(2, calc(50% - 0.5rem));
-    //grid-auto-rows: auto;
+    grid-auto-rows: auto;
     grid-gap: 1rem;
   }
 }

@@ -6,7 +6,27 @@
     >
       <h2>{{ portfolio.title }}</h2>
     </div>
-    <nuxt-content :document="portfolio" />
+    <div class="content">
+      <nuxt-content :document="portfolio" />
+    </div>
+    <div class="tech-block">
+      <h3>Tech used</h3>
+      <div>
+        <div v-for="(tech, index) in portfolio.techList" :key="index" class="tech">
+          {{ tech.techUsed }}
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <div class="link-block">
+        <img src="@/assets/icons/global-icon.svg" alt="site icon" />
+        <a :href="portfolio.siteLink">Link to site</a>
+      </div>
+      <div class="link-block">
+        <img src="@/assets/icons/github-icon.svg" alt="github icon" />
+        <a :href="portfolio.gitHubLink">Link to Github</a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -35,6 +55,45 @@ export default {
     padding: 20px;
     background-color: $color-accent;
     color: $color-background;
+  }
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.link-block {
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 15px;
+  }
+
+  a {
+    font-weight: 700;
+    color: $color-black;
+    text-decoration: none;
+  }
+}
+
+.tech-block {
+  text-align: center;
+  margin-bottom: 50px;
+
+  > div {
+    display: flex;
+    justify-content: center;
+
+    .tech {
+      font-weight: 700;
+      color: $color-accent;
+      background-color: $color-background;
+      border: solid 2px $color-accent;
+      padding: 10px 15px;
+      margin: 5px;
+    }
   }
 }
 </style>
