@@ -49,4 +49,7 @@ export default {
   content: {
     // Options
   },
+  generate: {
+    fallback: true,
+  },
 }

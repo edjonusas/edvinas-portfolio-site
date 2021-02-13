@@ -19,10 +19,5 @@ export default {
       post,
     }
   },
-
-  created() {
-    console.log('worked')
-    this.$router.push({ path: '/portfolio/' + this.post.slug })
-  },
 }
 </script>
