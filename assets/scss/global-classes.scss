@@ -3,8 +3,16 @@
   margin: 1rem;
 }
 
-.no-flick {
-  transform: translate3d(0, 0, 0);
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #26363b78;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #26363bbb;
 }
 
 @media (min-width: $breakpoint-tablet) {

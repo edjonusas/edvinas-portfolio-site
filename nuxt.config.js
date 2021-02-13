@@ -38,7 +38,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/axios', '@nuxt/content'],
+  modules: ['@nuxtjs/style-resources', '@nuxt/content'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
@@ -47,10 +47,19 @@ export default {
   styleResources: {
     scss: ['~/assets/scss/variables.scss', '~/assets/scss/global-classes.scss'],
   },
-  axios: {
-    // proxy: true
-  },
   content: {
     // Options
+  },
+  generate: {
+    routes() {
+      const fs = require('fs')
+      const path = require('path')
+      return fs.readdirSync('./content/portfolio').map((file) => {
+        return {
+          route: `/portfolio/${path.parse(file).name}`, // Return the slug
+          payload: require(`./content/portfolio/${file}`),
+        }
+      })
+    },
   },
 }
