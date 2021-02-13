@@ -51,12 +51,12 @@ export default {
     // Options
   },
   generate: {
-    routes() {
+    routes: function () {
       const fs = require('fs')
       const path = require('path')
       return fs.readdirSync('./content/portfolio').map((file) => {
         return {
-          route: `/portfolio/${path.parse(file).name}`, // Return the slug
+          route: `/blog/${path.parse(file).name}`, // Return the slug
           payload: require(`./content/portfolio/${file}`),
         }
       })
