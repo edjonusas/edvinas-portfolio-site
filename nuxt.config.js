@@ -50,16 +50,4 @@ export default {
   content: {
     // Options
   },
-  generate: {
-    routes: function () {
-      const fs = require('fs')
-      const path = require('path')
-      return fs.readdirSync('./content/portfolio').map((file) => {
-        return {
-          route: `/blog/${path.parse(file).name}`, // Return the slug
-          payload: require(`./content/portfolio/${file}`),
-        }
-      })
-    },
-  },
 }
