@@ -15,7 +15,7 @@
 export default {
   props: {
     portfolioList: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },

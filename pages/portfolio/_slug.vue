@@ -8,6 +8,7 @@
 export default {
   async asyncData({ $content, params, error }) {
     let post
+    console.log(params)
     try {
       post = await $content('portfolio', params.slug).fetch()
     } catch (e) {
