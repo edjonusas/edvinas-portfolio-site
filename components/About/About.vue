@@ -4,10 +4,10 @@
     <div class="main-block">
       <div class="text-block">
         <p>{{ aboutPage.aboutText }}</p>
-        <div class="list-block">
+        <div class="tech-block">
           <h3>Programing and other skills</h3>
           <ul>
-            <li v-for="(skill, index) in aboutPage.skills" :key="index">
+            <li v-for="(skill, index) in aboutPage.skills" :key="index" class="tech">
               {{ skill.skill }}
             </li>
           </ul>
@@ -34,18 +34,6 @@ p {
   margin: 0;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-
-  li {
-    font-weight: 600;
-    padding: 10px;
-  }
-}
-
 .main-block {
   display: flex;
   flex-direction: column;
@@ -58,6 +46,33 @@ ul {
 
 img {
   width: 100%;
+}
+
+.tech-block {
+  text-align: center;
+  margin-bottom: 50px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      font-weight: 600;
+      padding: 10px;
+    }
+  }
+
+  .tech {
+    font-weight: 700;
+    color: $color-accent;
+    background-color: $color-background;
+    border: solid 2px $color-accent;
+    padding: 10px 15px;
+    margin: 5px;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {

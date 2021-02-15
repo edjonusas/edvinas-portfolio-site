@@ -1,7 +1,5 @@
 <template>
-  <section>
-    <Contacts />
-  </section>
+  <div class="container">aaaaa</div>
 </template>
 
 <script>

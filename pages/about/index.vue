@@ -1,5 +1,7 @@
 <template>
-  <About :about-page="aboutPage" />
+  <section>
+    <About :about-page="aboutPage" />
+  </section>
 </template>
 
 <script>

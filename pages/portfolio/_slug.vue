@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <section>
     <PortfolioPost :portfolio="post" />
-  </div>
+  </section>
 </template>
 
 <script>
