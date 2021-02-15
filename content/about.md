@@ -15,4 +15,5 @@ skills:
   - skill: GIT
   - skill: CSS
   - skill: SCSS
+  - skill: Bootstrap
 ---
