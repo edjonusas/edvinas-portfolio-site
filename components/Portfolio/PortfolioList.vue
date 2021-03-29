@@ -23,10 +23,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
 .block {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  margin: 1rem;
 }
 
 a {

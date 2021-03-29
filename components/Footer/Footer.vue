@@ -37,6 +37,7 @@ footer {
 
   .data {
     font-weight: 700;
+    font-size: 0.8rem;
   }
 }
 </style>

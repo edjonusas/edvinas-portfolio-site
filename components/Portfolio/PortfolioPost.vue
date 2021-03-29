@@ -18,11 +18,11 @@
       </div>
     </div>
     <div class="links">
-      <div class="link-block">
+      <div v-if="portfolio.siteLink" class="link-block">
         <img src="@/assets/icons/global-icon.svg" alt="site icon" />
         <a :href="portfolio.siteLink">Link to site</a>
       </div>
-      <div class="link-block">
+      <div v-if="portfolio.gitHubLink" class="link-block">
         <img src="@/assets/icons/github-icon.svg" alt="github icon" />
         <a :href="portfolio.gitHubLink">Link to Github</a>
       </div>
