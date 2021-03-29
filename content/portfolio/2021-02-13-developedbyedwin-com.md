@@ -1,16 +1,19 @@
 ---
-title: developedbyedwin.com
-date: 2021-02-11T19:19:58.688Z
-description: "My personal portfolio site "
-portfolioImage: /img/portfolio.jpg
-gitHubLink: https://github.com/edjonusas/edvinas-portfolio-site
-siteLink: https://developedbyedwin.com/
+title: lostshtetl.com
+date: 2021-03-29T20:19:00.000Z
+description: The Lost Shtetl is a unique Lithuanian Jewish Culture and Heritage
+  project carried out by the NGO
+portfolioImage: /img/stetlas.jpg
+gitHubLink: ""
+siteLink: ""
 techList:
-  - techUsed: Nuxt.js
   - techUsed: Vue.js
-  - techUsed: Nuxt Content
+  - techUsed: Nuxt.js
+  - techUsed: SSR
   - techUsed: JavaScript
-  - techUsed: Netlify CMS
-  - techUsed: SCSS
+  - techUsed: Tailwindcss
+  - techUsed: Express.js
+  - techUsed: MangoDb
+  - techUsed: Mongoose
 ---
-Static Jamstack portfolio site made with Nuxt.js and Netlify CMS for easy data upload.
+The Lost Shtetl museum website with Nuxt.js server side render and express.js API. Multi language, automatic image optimization, custom made CMS. Design: Mantas Baliukas Front-end: Edvinas Jonušas, Back-end: Artur Pojarkov. IN PROGRESS...
