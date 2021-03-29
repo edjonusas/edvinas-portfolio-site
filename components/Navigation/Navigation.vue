@@ -26,6 +26,11 @@ export default {
       }
     },
   },
+  watch: {
+    $route() {
+      this.menuOpen = false
+    },
+  },
   mounted() {
     document.addEventListener('click', this.menuClose)
   },

@@ -2,7 +2,7 @@
   <div class="container">
     <h2>My portfolio works</h2>
     <div class="block">
-      <div v-for="portfolio in portfolioList" :key="portfolio.slug">
+      <div v-for="portfolio in portfolioList" :key="portfolio.slug" class="card">
         <nuxt-link :to="'/portfolio/' + portfolio.slug">
           <PortfolioCard :portfolio="portfolio" />
         </nuxt-link>
@@ -24,13 +24,15 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
-  margin-left: 1rem;
   margin-bottom: 2rem;
 }
 .block {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+}
+
+.card {
+  margin-bottom: 0.5rem;
 }
 
 a {
@@ -53,6 +55,10 @@ a:hover {
     grid-template-columns: repeat(2, calc(50% - 0.5rem));
     grid-auto-rows: auto;
     grid-gap: 1rem;
+  }
+
+  .card {
+    margin-bottom: 0;
   }
 }
 </style>
