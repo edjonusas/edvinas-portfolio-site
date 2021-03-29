@@ -16,4 +16,5 @@ skills:
   - skill: CSS
   - skill: SCSS
   - skill: Bootstrap
+  - skill: Tailwindcss
 ---
