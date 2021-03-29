@@ -1,17 +1,16 @@
 ---
-title: developedbn.com
+title: lawboutique.lt
 date: 2021-02-11T19:19:58.688Z
-description: 'My personal portfolio site '
-portfolioImage: /img/portfolio.jpg
-gitHubLink: https://github.com/edjonusas/edvinas-portfolio-site
-siteLink: https://developedbyedwin.com/
+description: Boutique legal services are a life-long term knowledge of our
+  clients and their business needs
+portfolioImage: /img/law-portfolio.jpg
+gitHubLink: ""
+siteLink: https://www.lawboutique.lt/
 techList:
   - techUsed: Nuxt.js
   - techUsed: Vue.js
-  - techUsed: Nuxt Content
   - techUsed: JavaScript
-  - techUsed: Netlify CMS
-  - techUsed: SCSS
+  - techUsed: Tailwindcss
+  - techUsed: i18n
 ---
-
-Static Jamstack portfolio site made with Nuxt.js and Netlify CMS for easy data upload.
+Nuxt.js multi language static site for law legal services. With responsive images, and automatic images compression. Lightweigt and super fast.
