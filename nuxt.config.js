@@ -1,7 +1,4 @@
 export default {
-  // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
-  ssr: false,
-
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -40,7 +37,9 @@ export default {
   modules: ['@nuxtjs/style-resources', '@nuxt/content'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    analyze: true,
+  },
 
   // add sass variables to project
   styleResources: {

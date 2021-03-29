@@ -17,12 +17,14 @@ h2 {
 
 p {
   font-size: $font-small;
+  line-height: 1.4rem;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: $color-background;
   color: $color-black;
+  overflow-x: hidden;
 }
 
 input,

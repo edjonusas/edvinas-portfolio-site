@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <h2>{{ aboutPage.title }}</h2>
     <div class="main-block">
       <div class="text-block">
+        <h2>{{ aboutPage.title }}</h2>
         <p>{{ aboutPage.aboutText }}</p>
         <div class="tech-block">
           <h3>Programing and other skills</h3>
@@ -30,6 +30,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h3 {
+  margin: 2rem 0 1rem;
+}
+
 p {
   margin: 0;
 }
@@ -85,7 +89,10 @@ img {
   }
 
   .text-block {
-    margin-right: 1rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 </style>
