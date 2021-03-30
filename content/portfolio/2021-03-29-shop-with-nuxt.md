@@ -12,4 +12,4 @@ techList:
   - techUsed: MongoDb
   - techUsed: SCSS
 ---
-Nuxt.js shop project with SSR and Express.js API. Code Academy course project. Made by 6 people team. 
+Nuxt.js shop with SSR and Express.js API. Code Academy course project. Challenges to work with team. Learn Github version control. Learn Nuxt.
