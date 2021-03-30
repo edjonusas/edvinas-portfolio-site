@@ -77,7 +77,6 @@ img {
   position: fixed;
   z-index: 2;
   transition: 0.5s;
-  z-index: 1;
   top: 0;
   right: 0;
   padding: 200px 40px 0;
@@ -90,17 +89,9 @@ img {
   height: calc(100vh - 200px);
   box-shadow: -5px 1px 10px 5px #00000049;
 
-  .nuxt-link-exact-active::after {
-    transition: 0.7s;
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    height: 8px;
-    width: 0;
-    background-color: $color-black;
-    background: linear-gradient($color-black, #ffffff00);
-    width: 100%;
+  .nuxt-link-exact-active {
+    background-color: $color-accent;
+    color: $color-background;
   }
 
   a {
@@ -108,21 +99,11 @@ img {
     color: $color-black;
     font-weight: 700;
     text-decoration: none;
-    margin-bottom: 48px;
+    padding: 0.7rem 1rem;
 
-    &::after {
-      transition: 0.7s;
-      content: '';
-      position: absolute;
-      bottom: -7px;
-      left: 0;
-      height: 3px;
-      width: 0;
-      background-color: $color-black;
-    }
-
-    &:hover::after {
-      width: 100%;
+    &:hover {
+      background-color: $color-accent;
+      color: $color-background;
     }
   }
 }
@@ -146,10 +127,6 @@ img {
     background: none;
     height: initial;
     box-shadow: none;
-    a {
-      margin-bottom: 0;
-      margin: 0 15px;
-    }
   }
 }
 </style>
