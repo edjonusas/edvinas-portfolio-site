@@ -84,7 +84,7 @@ form {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  width: 100%;
 }
 label {
   position: absolute;
@@ -140,5 +140,17 @@ button:hover {
 .green {
   color: #69e487;
   border: 2px solid #69e487;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  form {
+    width: 80%;
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+  form {
+    width: 60%;
+  }
 }
 </style>
