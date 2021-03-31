@@ -6,13 +6,18 @@
         rel="noopener"
         target="_blank"
       >
-        <img src="@/assets/icons/linkedin-icon.svg" alt="linedin icon" />
+        <img width="22px" height="22px" src="@/assets/icons/linkedin-icon.svg" alt="linedin icon" />
       </a>
       <a href="https://www.instagram.com/ed.jonusas/" rel="noopener" target="_blank">
-        <img src="@/assets/icons/instagram-icon.svg" alt="instagram icon" />
+        <img
+          width="22px"
+          height="22px"
+          src="@/assets/icons/instagram-icon.svg"
+          alt="instagram icon"
+        />
       </a>
       <a href="https://github.com/edjonusas" rel="noopener" target="_blank">
-        <img src="@/assets/icons/github-icon.svg" alt="github icon" />
+        <img width="22px" height="22px" src="@/assets/icons/github-icon.svg" alt="github icon" />
       </a>
     </div>
     <div class="data">All rights reserved 2020</div>
