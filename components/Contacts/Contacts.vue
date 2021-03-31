@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <form name="contact" method="POST" data-netlify="true" @submit.prevent="handleSubmit">
+    <form name="contact" @submit.prevent="handleSubmit">
       <div>
         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
         <input v-model="form.name" placeholder="Enter your name" type="text" name="name" />
