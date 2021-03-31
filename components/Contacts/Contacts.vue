@@ -1,6 +1,17 @@
 <template>
-  <div class="container">
+  <section class="container">
+    <div class="contacts-block">
+      <div>
+        <h3>Call me:</h3>
+        <p>+370640880</p>
+      </div>
+      <div>
+        <h3>Write me:</h3>
+        <p>ed.jonuas@gamil.com</p>
+      </div>
+    </div>
     <form name="contact" @submit.prevent="handleSubmit">
+      <h3>Or fill the form</h3>
       <div>
         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
         <input v-model="form.name" placeholder="Enter your name" type="text" name="name" />
@@ -11,7 +22,7 @@
       <div v-if="error" class="message red">Please fill all inputs</div>
       <div v-if="send" class="message green">Message sent</div>
     </form>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -80,11 +91,42 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.contacts-block {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    padding: 1rem;
+    // border: 2px solid $color-accent;
+    margin-bottom: 0.6rem;
+  }
+
+  div:last-child {
+    margin-bottom: 1.2rem;
+  }
+
+  h3 {
+    color: $color-accent;
+    margin: 0;
+    margin-bottom: 0.6rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
 form {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  h3 {
+    text-align: center;
+    color: $color-accent;
+  }
 }
 label {
   position: absolute;
@@ -143,13 +185,15 @@ button:hover {
 }
 
 @media (min-width: $breakpoint-tablet) {
-  form {
+  form,
+  .contacts-block {
     width: 80%;
   }
 }
 
 @media (min-width: $breakpoint-laptop) {
-  form {
+  form,
+  .contacts-block {
     width: 60%;
   }
 }
