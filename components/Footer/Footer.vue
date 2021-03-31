@@ -1,13 +1,17 @@
 <template>
   <footer>
     <div class="social-icons-block">
-      <a href="https://www.linkedin.com/in/edvinas-jonu%C5%A1as-41a4a6122/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/edvinas-jonu%C5%A1as-41a4a6122/"
+        rel="noopener"
+        target="_blank"
+      >
         <img src="@/assets/icons/linkedin-icon.svg" alt="linedin icon" />
       </a>
-      <a href="https://www.instagram.com/ed.jonusas/" target="_blank">
+      <a href="https://www.instagram.com/ed.jonusas/" rel="noopener" target="_blank">
         <img src="@/assets/icons/instagram-icon.svg" alt="instagram icon" />
       </a>
-      <a href="https://github.com/edjonusas" target="_blank">
+      <a href="https://github.com/edjonusas" rel="noopener" target="_blank">
         <img src="@/assets/icons/github-icon.svg" alt="github icon" />
       </a>
     </div>
@@ -31,8 +35,8 @@ footer {
     margin-bottom: 25px;
   }
 
-  img {
-    margin: 0 15px;
+  a {
+    padding: 10px;
   }
 
   .data {

@@ -3,6 +3,9 @@ export default {
   target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
+    htmlAttrs: {
+      lang: 'en',
+    },
     title: 'edvinas-portfolio-site',
     meta: [
       { charset: 'utf-8' },
