@@ -3,7 +3,7 @@
     <div class="contacts-block">
       <div>
         <h3>Call me:</h3>
-        <p>+3706880660</p>
+        <p>+37064880660</p>
       </div>
       <div>
         <h3>Write me:</h3>
