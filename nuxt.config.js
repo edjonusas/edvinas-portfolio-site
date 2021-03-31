@@ -34,7 +34,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/style-resources', '@nuxt/content'],
+  modules: ['@nuxtjs/style-resources', '@nuxt/content', '@nuxtjs/axios'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
