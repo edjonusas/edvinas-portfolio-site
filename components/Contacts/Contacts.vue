@@ -67,7 +67,7 @@ export default {
         header: { 'Content-Type': 'application/x-www-form-urlencoded' },
       }
       this.$axios.post(
-        '/',
+        '/contacts',
         this.encode({
           'form-name': 'contact',
           ...this.form,

@@ -51,4 +51,8 @@ export default {
   generate: {
     fallback: true,
   },
+
+  axios: {
+    baseURL: 'https://developedbyedwin.com/',
+  },
 }
