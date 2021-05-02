@@ -5,7 +5,7 @@ aboutText: From gold to code :) . I was a jeweler now I'm highly motivated Front
   where I can enhance my skill set in web technologies to develop and implement
   solutions to meet business needs. Have experience with Front end and Back end
   (PHP) development. At the moment making projects with nuxt.js
-image: /img/my-portrait.jpg
+image: /img/2020.12.jpg
 skills:
   - skill: JavaStript
   - skill: Vue.js
