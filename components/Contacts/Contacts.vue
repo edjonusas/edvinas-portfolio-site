@@ -85,6 +85,9 @@ export default {
         }),
         axiosConfig
       )
+      this.form.name = ''
+      this.form.email = ''
+      this.form.message = ''
     },
   },
 }
