@@ -17,6 +17,7 @@ export default {
       {
         rel: 'preload',
         as: 'font',
+        type: 'font/woff2',
         href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap',
       },
     ],
