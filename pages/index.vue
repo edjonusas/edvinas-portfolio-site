@@ -16,6 +16,13 @@ export default {
   head() {
     return {
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Developed By Edwin home page. Want to collaborate? call me or send me email',
+        },
+      ],
     }
   },
 }
