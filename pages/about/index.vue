@@ -12,5 +12,22 @@ export default {
     const aboutPage = await $content('about').fetch()
     return { aboutPage }
   },
+  data() {
+    return {
+      title: 'Developed By Edwin about page',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Developed By Edwin about page - skills and tech I use',
+        },
+      ],
+    }
+  },
 }
 </script>
