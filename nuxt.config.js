@@ -36,6 +36,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -59,5 +60,9 @@ export default {
 
   axios: {
     baseURL: 'https://developedbyedwin.com/',
+  },
+
+  googleAnalytics: {
+    id: 'G-Q7XGCF0HG3',
   },
 }
