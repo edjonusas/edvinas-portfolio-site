@@ -27,6 +27,9 @@
         <a :href="portfolio.gitHubLink">Link to Github</a>
       </div>
     </div>
+    <div class="center">
+      <div class="button"><NuxtLink to="/portfolio">Back to Portfolio</NuxtLink></div>
+    </div>
   </div>
 </template>
 
@@ -96,5 +99,29 @@ export default {
       margin: 5px;
     }
   }
+}
+
+.button {
+  margin: 80px 0;
+  a {
+    text-transform: uppercase;
+    transition: 0.6s;
+    display: inline-block;
+    border: 3px solid $color-accent;
+    padding: 10px 22px;
+    font-weight: 700;
+    font-size: $font-medium;
+    color: $color-accent;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-background;
+      background-color: $color-accent;
+    }
+  }
+}
+
+.center {
+  text-align: center;
 }
 </style>
